@@ -8,7 +8,7 @@ import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 
-// botname: Mr.Spencer username: Mr_SpencerBot @username t.me/Mr_SpencerBot Token: 1364737173:AAEnq62WVCO7M_Ne3ZLe_bEWYjtBsT0mAxM
+// botname: Mr.Spencer 
 public class SpencerBot extends TelegramLongPollingBot {
  
 	public static void main(String[] args) {
@@ -23,12 +23,12 @@ public class SpencerBot extends TelegramLongPollingBot {
  
 	@Override
 	public String getBotUsername() {
-		return "Mr_SpencerBot";
+		return "Bot_username";
 	}
  
 	@Override
 	public String getBotToken() {
-		return "1364737173:AAEnq62WVCO7M_Ne3ZLe_bEWYjtBsT0mAxM";
+		return "token";
 	}
  
 	@Override
@@ -36,9 +36,9 @@ public class SpencerBot extends TelegramLongPollingBot {
 		Message message = update.getMessage();
 		if (message != null && message.hasText()) {
 			if (message.getText().equals("/help"))
-				sendMsg(message, "Привет, я робот");
+				sendMsg(message, "ГЏГ°ГЁГўГҐГІ, Гї Г°Г®ГЎГ®ГІ");
 			else
-				sendMsg(message, "Я не знаю что ответить на это");
+				sendMsg(message, "Гџ Г­ГҐ Г§Г­Г Гѕ Г·ГІГ® Г®ГІГўГҐГІГЁГІГј Г­Г  ГЅГІГ®");
 		}
 	}
  
